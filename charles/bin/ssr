@@ -1,8 +1,8 @@
 #!/bin/bash
 # 作者：老徐
 # SSR免费分享网站（所有帐号均来源于网上别人的分享）：http://ss.pythonic.life
-# 源代码主页：https://github.com/the0demiurge
-# 访问https://github.com/the0demiurge/CharlesScripts/blob/master/charles/bin/ssr获取本脚本的最新版
+# 源代码主页：https://github.com/Oculet
+# 访问https://github.com/Oculet/CharlesScripts/blob/master/charles/bin/ssr获取本脚本的最新版
 # 使用方法：把该脚本放到$PATH里面并加入可执行权限就行（比如说放到/usr/local/bin）
 # 首次使用输入ssr install后安装时会自动安装到 $HOME/.local/share/shadowsocksr
 # 输入ssr config进行配置，输入JSON格式的配置文件
@@ -16,7 +16,7 @@ fi
 
 WEBSITE=http://ss.pythonic.life
 BRANCH=manyuser
-GIT_REPO=https://github.com/shadowsocksrr/shadowsocksr.git
+GIT_REPO=https://github.com/shadowsocksr-backup/shadowsocksr.git
 INSTALL_PATH=$HOME/.local/share/shadowsocksr
 
 ssr_help() {
@@ -104,7 +104,7 @@ BLOCKED='
 
 Update failed! For more information, see
 
-https://github.com/the0demiurge/ShadowSocksShare-OpenShift/issues/17
+https://github.com/Oculet/ShadowSocksShare-OpenShift/issues/17
 
 And edit `$WEBSITE` in this script.'
 
@@ -112,7 +112,7 @@ ISSUE='
 
 The response was empty, try it 10 mins later or report it on
 
-https://github.com/the0demiurge/CharlesScripts/issues'
+https://github.com/Oculet/CharlesScripts/issues'
 
 ssr_update() {
     JSON=$(curl -L $WEBSITE/json)
