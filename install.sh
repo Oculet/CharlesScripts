@@ -45,7 +45,7 @@ dependency() {
 gitclone() {
     if [ ! -d ~/.local/share ]; then mkdir -p ~/.local/share; fi
     if [[ -x ~/.local/share/CharlesScripts ]]; then rm -rf ~/.local/share/CharlesScripts; fi
-    git clone https://github.com/the0demiurge/CharlesScripts.git ~/.local/share/CharlesScripts
+    git clone https://github.com/Oculet/CharlesScripts.git ~/.local/share/CharlesScripts
     if [[ ! -x $CHARLES_BACKUP ]]; then
         echo 'Please type your backup git repo address. If you do not have one, you may create it on GitHub.com.'
         read -p 'Press Enter to skip' REPO
@@ -53,7 +53,7 @@ gitclone() {
     fi
     if [[ ! -x $CHARLES_BACKUP ]]; then
         echo 'Clone failed! Default CharlesBackup will be cloned!'
-        git clone https://github.com/the0demiurge/CharlesBackup.git $CHARLES_BACKUP
+        git clone https://github.com/Oculet/CharlesBackup.git $CHARLES_BACKUP
         echo 'You may modify $CHARLES_BACKUP, and type:'
         echo 'cd $CHARLES_BACKUP'
         echo 'git remote set-url origin <your-git-url>'
