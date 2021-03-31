@@ -8,7 +8,7 @@ case $OS in
     ;;
 'Ubuntu')
     INSTALL() { sudo apt install $@ -y --allow-unauthenticated; }
-    UPDATE() { sudo apt update vim; }
+    UPDATE() { sudo apt update; }
     ;;
 *) echo 'Your distribution has not implementd yet, please modify this command' ;;
 esac
