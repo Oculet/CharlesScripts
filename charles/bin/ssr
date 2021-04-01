@@ -17,7 +17,7 @@ fi
 WEBSITE=http://www.google.com
 BRANCH=manyuser
 GIT_REPO=https://gitee.com/oculet/shadowsocksr.git
-INSTALL_PATH=$HOME/local/share/shadowsocksr
+INSTALL_PATH=$HOME/mnt/ssrr
 
 ssr_help() {
     echo ShadowSocksR python client tool
