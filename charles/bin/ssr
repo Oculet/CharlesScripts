@@ -14,9 +14,9 @@ if [ -z "$EDITOR" ]; then
     EDITOR=vi
 fi
 
-WEBSITE=http://ss.pythonic.life
+WEBSITE=http://www.google.com
 BRANCH=manyuser
-GIT_REPO=https://github.com/shadowsocksr-backup/shadowsocksr.git
+GIT_REPO=https://gitee.com/oculet/shadowsocksr.git
 INSTALL_PATH=$HOME/local/share/shadowsocksr
 
 ssr_help() {
